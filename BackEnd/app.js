@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
-const Listing = require("./Models/listing.js"); // Ensure the correct path to the model
+const Listing = require("./Models/Listing.js"); // ensure the file name and path.
 const app = express();
 
 const PORT = 8080;
@@ -14,10 +14,7 @@ app.use(express.json());
 const MONGO_URL = "mongodb://127.0.0.1:27017/StayHubReact";
 async function main() {
   try {
-    await mongoose.connect(MONGO_URL, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    await mongoose.connect(MONGO_URL);
     console.log("Connected to DB");
   } catch (error) {
     console.error("Error connecting to the database:", error);
