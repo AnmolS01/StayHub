@@ -1,22 +1,30 @@
 const mongoose = require("mongoose");
-const initData = require("./data.js");
-const Listing = require("../Models/");
+const { sampleData } = require("./data.js"); // Import sample data from data.js file
+const Listing = require("../Models/listing.js"); // Import the Listing model to perform database operations
 
+// MongoDB connection setup
 const MONGO_URL = "mongodb://127.0.0.1:27017/StayHubReact";
 
-async function main() {
-  try {
-    await mongoose.connect(MONGO_URL);
-    console.log("Connected to DB");
-
-    await Listing.deleteMany({});
-    await Listing.insertMany(initData);
-    console.log("Data is initialized");
-  } catch (error) {
-    console.error("Error initializing the database:", error);
-  } finally {
-    mongoose.connection.close();
-  }
+// Function to connect to MongoDB
+function main() {
+  mongoose.connect(MONGO_URL);
 }
 
-main();
+// Execute the main function and handle connection status
+main()
+  .then(() => {
+    console.log("Connected to DB");
+  })
+  .catch((error) => {
+    console.error("Error connecting to the database:", error);
+  });
+
+// Initialize the database with sample data
+const initDB = async () => {
+  await Listing.deleteMany({}); // Remove existing listings
+  await Listing.insertMany(sampleData); // Insert sample data into the database
+  console.log("Database initialized with sample data");
+};
+
+// Execute the database initialization
+initDB();

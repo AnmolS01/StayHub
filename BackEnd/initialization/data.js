@@ -1,9 +1,99 @@
 const sampleListing = [
   {
+    title: "Luxury Pool Villa",
+    description: "Spectacular contemporary design",
+    image:
+      "https://img.freepik.com/free-photo/luxury-pool-villa-spectacular-contemporary-design-digital-art-real-estate-home-house-property-ge_1258-150755.jpg",
+    price: 7000,
+    location: "Bengaluru, Karnataka",
+    country: "India",
+    __v: 0,
+  },
+  {
+    title: "Modern Villa with Pool",
+    description: "Stunning modern villa with a swimming pool",
+    image:
+      "https://img.freepik.com/free-photo/landscape-sunset-architectural-matrix-stunning-modern-villa-with-swimming-pool_1409-5155.jpg",
+    price: 6500,
+    location: "Goa",
+    country: "India",
+    __v: 0,
+  },
+  {
+    title: "3D Model House",
+    description: "3D model house with contemporary architecture",
+    image:
+      "https://img.freepik.com/free-photo/3d-model-house-building_23-2150761004.jpg",
+    price: 5800,
+    location: "Mumbai, Maharashtra",
+    country: "India",
+    __v: 0,
+  },
+  {
+    title: "Modern Architecture",
+    description: "3D house model with modern architecture",
+    image:
+      "https://img.freepik.com/free-photo/3d-house-model-with-modern-architecture_23-2151004062.jpg",
+    price: 6000,
+    location: "Delhi",
+    country: "India",
+    __v: 0,
+  },
+  {
+    title: "Luxurious Villa",
+    description: "Luxurious villa with a modern design",
+    image:
+      "https://img.freepik.com/free-photo/luxurious-villa-with-modern-architectural-design_23-2151694118.jpg",
+    price: 7200,
+    location: "Chennai, Tamil Nadu",
+    country: "India",
+    __v: 0,
+  },
+  {
+    title: "House with Red Car",
+    description: "Charming house with a red car in front",
+    image:
+      "https://img.freepik.com/free-photo/house-with-red-car-front-it_1340-32084.jpg",
+    price: 5300,
+    location: "Pondicherry",
+    country: "India",
+    __v: 0,
+  },
+  {
+    title: "Luxury Hotel with Infinity Pool",
+    description: "Hotel with an infinity pool and tropical landscape",
+    image:
+      "https://img.freepik.com/free-photo/luxury-hotel-with-infinity-pool-palm-trees-tropical-landscape-generated-by-artificial-intelligence_188544-150208.jpg",
+    price: 7500,
+    location: "Alleppey, Kerala",
+    country: "India",
+    __v: 0,
+  },
+  {
+    title: "House by the Lake",
+    description: "Beautiful house with a lake view",
+    image:
+      "https://img.freepik.com/free-photo/house-with-lake-background_1340-43168.jpg",
+    price: 6000,
+    location: "Nainital, Uttarakhand",
+    country: "India",
+    __v: 0,
+  },
+  {
+    title: "Modern Luxury Villa",
+    description: "Modern luxury villa with contemporary features",
+    image:
+      "https://img.freepik.com/free-photo/modern-luxury-villa-background_1409-7368.jpg",
+    price: 6800,
+    location: "Hyderabad, Telangana",
+    country: "India",
+    __v: 0,
+  },
+  {
     title: "Ocean View Villa",
     description: "By the beach",
     image:
-      "https://unsplash.com/photos/blue-body-of-water-in-front-of-building-near-trees-during-nighttime-M7GddPqJowg",
+      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: 5000,
     location: "Mirzapur, Bihar",
     country: "India",
@@ -13,7 +103,7 @@ const sampleListing = [
     title: "Mountain Retreat",
     description: "Nestled in the hills",
     image:
-      "https://unsplash.com/photos/white-and-grey-concrete-building-near-swimming-pool-under-clear-sky-during-daytime-2d4lAQAlbDA",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: 4500,
     location: "Shimla, Himachal Pradesh",
     country: "India",
@@ -22,7 +112,8 @@ const sampleListing = [
   {
     title: "City Escape",
     description: "Modern and cozy",
-    image: "https://unsplash.com/photos/swimming-pool-on-mountain-OwWbUOIbhDY",
+    image:
+      "https://images.unsplash.com/photo-1509600110300-21b9d5fedeb7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: 5500,
     location: "Delhi",
     country: "India",
@@ -32,7 +123,7 @@ const sampleListing = [
     title: "Countryside Cottage",
     description: "Peaceful and serene",
     image:
-      "https://unsplash.com/photos/wide-angle-photo-of-brown-and-blue-building-_6ROq_LmdkM",
+      "https://images.unsplash.com/photo-1521750465-672a0f580901?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: 4000,
     location: "Coorg, Karnataka",
     country: "India",
@@ -42,7 +133,7 @@ const sampleListing = [
     title: "Desert Oasis",
     description: "Luxurious and unique",
     image:
-      "https://unsplash.com/photos/resort-with-pool-hut-and-patio-umbrellas-dyj7RTs85Fs",
+      "https://images.unsplash.com/photo-1534009502677-4e5080efa8c6?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: 6000,
     location: "Jaisalmer, Rajasthan",
     country: "India",
@@ -51,7 +142,8 @@ const sampleListing = [
   {
     title: "Lakeside Lodge",
     description: "Scenic and relaxing",
-    image: "https://unsplash.com/photos/swimming-pool-near-ocean-2gOxKj594nM",
+    image:
+      "https://images.unsplash.com/photo-1540541338287-41700207dee6?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: 4700,
     location: "Nainital, Uttarakhand",
     country: "India",
@@ -61,7 +153,7 @@ const sampleListing = [
     title: "Urban Loft",
     description: "Chic and stylish",
     image:
-      "https://unsplash.com/photos/brown-wooden-lounge-chairs-near-body-of-water-during-daytime-oyxsG2Lh_uA",
+      "https://images.unsplash.com/photo-1586611292717-f828b167408c?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: 5200,
     location: "Mumbai, Maharashtra",
     country: "India",
@@ -71,7 +163,7 @@ const sampleListing = [
     title: "Seaside Cottage",
     description: "Charming and quaint",
     image:
-      "https://unsplash.com/photos/brown-wooden-gazebo-on-beach-during-daytime-VfvDuCY6-ZM",
+      "https://images.unsplash.com/photo-1584084991225-767356289e9c?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: 4800,
     location: "Goa",
     country: "India",
@@ -81,120 +173,133 @@ const sampleListing = [
     title: "Hilltop Haven",
     description: "Breath-taking views",
     image:
-      "https://unsplash.com/photos/bench-and-dining-table-near-body-of-water-under-calm-sky-YC8qqp50BdA",
-    price: 5600,
-    location: "Munnar, Kerala",
-    country: "India",
-    __v: 0,
-  },
-  {
-    title: "Traditional Haveli",
-    description: "Rich in heritage",
-    image: "https://unsplash.com/photos/brown-estate-ssOtyGE8CyE",
+      "https://images.unsplash.com/photo-1586611292717-f828b167408c?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: 6500,
-    location: "Udaipur, Rajasthan",
+    location: "Mussoorie, Uttarakhand",
     country: "India",
     __v: 0,
   },
   {
-    title: "Luxury Apartment",
-    description: "Elegant and modern",
+    title: "Riverside Cabin",
+    description: "Cozy and tranquil",
     image:
-      "https://unsplash.com/photos/a-large-swimming-pool-with-a-sun-setting-in-the-background-Yw3_lbdt48w",
-    price: 6200,
-    location: "Bengaluru, Karnataka",
+      "https://images.unsplash.com/photo-1534009502677-4e5080efa8c6?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    price: 5300,
+    location: "Kerala",
     country: "India",
     __v: 0,
   },
   {
-    title: "Riverside Retreat",
-    description: "Calm and serene",
+    title: "Grand Estate",
+    description: "Elegant and majestic",
     image:
-      "https://unsplash.com/photos/pool-surrounded-with-trees-and-gazebos-1tyuLfDOnG0",
-    price: 5400,
-    location: "Rishikesh, Uttarakhand",
-    country: "India",
-    __v: 0,
-  },
-  {
-    title: "Beachfront Resort",
-    description: "Perfect for relaxation",
-    image:
-      "https://unsplash.com/photos/a-large-pool-with-a-wooden-dock-surrounded-by-palm-trees-izUlxxDtLL8",
-    price: 7000,
-    location: "Kovalam, Kerala",
-    country: "India",
-    __v: 0,
-  },
-  {
-    title: "Rustic Farmhouse",
-    description: "Countryside charm",
-    image:
-      "https://unsplash.com/photos/a-swimming-pool-surrounded-by-trees-and-plants-tYd9AaYofn8",
-    price: 4300,
-    location: "Pondicherry",
-    country: "India",
-    __v: 0,
-  },
-  {
-    title: "Contemporary Villa",
-    description: "Spacious and modern",
-    image:
-      "https://unsplash.com/photos/white-and-brown-house-near-swimming-pool-during-daytime-HKr5cn6S0q0",
-    price: 5900,
-    location: "Chennai, Tamil Nadu",
-    country: "India",
-    __v: 0,
-  },
-  {
-    title: "Historic Mansion",
-    description: "Grand and classic",
-    image:
-      "https://unsplash.com/photos/brown-wooden-lounge-chairs-near-body-of-water-during-daytime-oyxsG2Lh_uA",
-    price: 6800,
+      "https://img.freepik.com/free-photo/3d-house-model-with-modern-architecture_23-2151004046.jpg",
+    price: 8000,
     location: "Hyderabad, Telangana",
     country: "India",
     __v: 0,
   },
   {
-    title: "Eco-Friendly Cabin",
-    description: "Sustainable living",
+    title: "Coastal Villa",
+    description: "Stylish and relaxing",
     image:
-      "https://unsplash.com/photos/sunloungers-fronting-buildings-near-mountain-DGa0LQ0yDPc",
-    price: 4200,
-    location: "Alleppey, Kerala",
+      "https://img.freepik.com/premium-photo/house-hd-image-luxury-house-villa-palace-house-rent-house-sale-front-elevation-design_1012565-20476.jpg",
+    price: 6700,
+    location: "Kochi, Kerala",
     country: "India",
     __v: 0,
   },
   {
-    title: "Modern Penthouse",
-    description: "Luxurious and exclusive",
+    title: "Elegant Estate",
+    description: "Sophisticated and upscale",
     image:
-      "https://unsplash.com/photos/a-house-with-a-swimming-pool-in-front-of-it-7ugCvlbjv-E",
-    price: 7500,
+      "https://img.freepik.com/premium-photo/house-hd-image-luxury-house-villa-palace-house-rent-house-sale-front-elevation-design_1012565-20855.jpg",
+    price: 7200,
+    location: "Pune, Maharashtra",
+    country: "India",
+    __v: 0,
+  },
+  {
+    title: "Country Manor",
+    description: "Rustic and charming",
+    image:
+      "https://img.freepik.com/free-photo/nature-landscape-hawaii-with-digital-art-style_23-2151793618.jpg",
+    price: 5000,
+    location: "Chandigarh",
+    country: "India",
+    __v: 0,
+  },
+  {
+    title: "Sunny Beach House",
+    description: "Bright and airy",
+    image:
+      "https://img.freepik.com/free-photo/3d-model-house-building_23-2150761002.jpg",
+    price: 5500,
+    location: "Goa",
+    country: "India",
+    __v: 0,
+  },
+  {
+    title: "Chic Urban Apartment",
+    description: "Stylish and modern",
+    image:
+      "https://img.freepik.com/free-photo/3d-house-model-with-modern-architecture_23-2151004020.jpg",
+    price: 5600,
+    location: "Bengaluru, Karnataka",
+    country: "India",
+    __v: 0,
+  },
+  {
+    title: "Eco-Friendly Lodge",
+    description: "Sustainable and comfortable",
+    image:
+      "https://img.freepik.com/free-photo/3d-house-model-with-modern-architecture_23-2151004030.jpg",
+    price: 4800,
+    location: "Coorg, Karnataka",
+    country: "India",
+    __v: 0,
+  },
+  {
+    title: "Spacious Penthouse",
+    description: "Luxurious and expansive",
+    image:
+      "https://img.freepik.com/free-photo/3d-rendering-wooden-house_23-2151264503.jpg",
+    price: 7000,
+    location: "Mumbai, Maharashtra",
+    country: "India",
+    __v: 0,
+  },
+  {
+    title: "Historic Mansion",
+    description: "Elegant and historic",
+    image:
+      "https://img.freepik.com/free-photo/luxurious-villa-with-modern-architectural-design_23-2151694097.jpg",
+    price: 8000,
+    location: "Kolkata, West Bengal",
+    country: "India",
+    __v: 0,
+  },
+  {
+    title: "Contemporary Apartment",
+    description: "Modern and comfortable",
+    image:
+      "https://img.freepik.com/free-photo/3d-model-house-building_23-2150761006.jpg",
+    price: 5400,
     location: "Delhi",
     country: "India",
     __v: 0,
   },
   {
-    title: "Quiet Getaway",
-    description: "Peaceful and private",
+    title: "Charming Farmhouse",
+    description: "Rustic and cozy",
     image:
-      "https://unsplash.com/photos/white-and-brown-concrete-building-hHz4yrvxwlA",
-    price: 4600,
-    location: "Mysore, Karnataka",
-    country: "India",
-    __v: 0,
-  },
-  {
-    title: "Charming Studio",
-    description: "Compact and cozy",
-    image: "https://unsplash.com/photos/white-concrete-building-g39p1kDjvSY",
-    price: 3400,
-    location: "Gurgaon, Haryana",
+      "https://img.freepik.com/free-photo/luxurious-villa-with-modern-architectural-design_23-2151694144.jpg",
+    price: 4700,
+    location: "Pondicherry",
     country: "India",
     __v: 0,
   },
 ];
 
-module.exports = sampleListing;
+// exporting object with key:value to make it accessible anywhere in the application
+module.exports = { sampleData: sampleListing };
